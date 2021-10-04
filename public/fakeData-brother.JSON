@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Tafseer Course",
+    "desc": "No doubt the knowledge of Quran is the best of all knowledge and it is necessary for Muslims to not only learn the re...",
+    "img": "https://www.quranteacher.net/public_html/course_images/Faizan-e-Tafseer-Course.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Tasawuf Course",
+    "desc": "There is very much to learn from the lives of Sahaba, Tabieen, Taba Tabieen, and many Islamic saints who came after t...",
+    "img": "https://www.quranteacher.net/public_html/course_images/Tasawuf-Course.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Bahar e Shariat Course",
+    "desc": "Bahar e Shariat a well-recognized religious book and this book is a source of becoming an Islamic scholar. In Faizan-...",
+    "img": "https://www.quranteacher.net/public_html/course_images/bahar-e-shariyat-course.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Ramzan Course",
+    "desc": "Fasting is one of the sacred pillars of Islam and observed in the month of Ramadan every lunar year by every sane mal...",
+    "img": "https://www.quranteacher.net/public_html/course_images/Faizan-e-Ramzan-Course.jpg"
+  }
+]

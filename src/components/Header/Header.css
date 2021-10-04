@@ -1,0 +1,19 @@
+.text {
+  font-family: "Fredoka One", cursive;
+}
+
+.logo img {
+  width: 50%;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  padding: 25px 30px;
+  font-size: 20px;
+}
+
+.link:hover {
+  background-color: #54a5dc;
+  color: white;
+}
