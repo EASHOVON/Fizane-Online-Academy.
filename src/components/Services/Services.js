@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { Container, Button, Row, Col, Card } from 'react-bootstrap';
-import './Services.css'
+import './Services.css';
 
 const Services = () =>
 {
@@ -54,13 +54,6 @@ const Services = () =>
                             </Row>
                         </div>))
                     }
-                    <div className="text-center my-4">
-                        <Button className="btn">View More</Button>
-                    </div>
-                </div>
-                <div className="row mt-5">
-                    <h3 className="text-center">Courses For Sisters</h3>
-
                     <div className="text-center my-4">
                         <Button className="btn">View More</Button>
                     </div>
