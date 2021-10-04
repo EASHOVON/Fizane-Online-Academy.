@@ -34,7 +34,7 @@ const Header = () =>
                                     color: 'white'
                                 }}
                             >
-                                Services
+                                Courses
                             </NavLink>
                             <NavLink className="link"
                                 to="/about"
