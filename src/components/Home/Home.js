@@ -3,7 +3,9 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import { Card, Carousel, Container, Button } from 'react-bootstrap';
 import './Home.css';
-import VideoPlayer from 'react-video-js-player'
+import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
+import { Link } from 'react-router-dom';
 
 const Home = () =>
 {
@@ -25,6 +27,7 @@ const Home = () =>
     }, []);
     return (
         <div>
+            <Header></Header>
             <Carousel>
                 <Carousel.Item>
                     <img
@@ -63,13 +66,17 @@ const Home = () =>
                                     <Card.Text>
                                         {course.desc}
                                     </Card.Text>
-                                    <Button variant="primary">Veiw Details</Button>
+                                    <Link to="/courses">
+                                        <Button className="btn">Veiw Details</Button>
+                                    </Link>
                                 </Card.Body>
                             </Card>
                         </div>)
                     }
                     <div className="text-center my-4">
-                        <Button className="btn">View More</Button>
+                        <Link to="/courses">
+                            <Button className="btn">View More</Button>
+                        </Link>
                     </div>
                 </div>
                 <div className="row mt-5">
@@ -83,16 +90,21 @@ const Home = () =>
                                     <Card.Text>
                                         {course.desc}
                                     </Card.Text>
-                                    <Button className="btn">Veiw Details</Button>
+                                    <Link to="/courses">
+                                        <Button className="btn">Veiw Details</Button>
+                                    </Link>
                                 </Card.Body>
                             </Card>
                         </div>)
                     }
                     <div className="text-center my-4">
-                        <Button className="btn">View More</Button>
+                        <Link to="/courses">
+                            <Button className="btn">View More</Button>
+                        </Link>
                     </div>
                 </div>
             </Container>
+            <Footer></Footer>
         </div>
     );
 };

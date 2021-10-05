@@ -6,8 +6,12 @@ const NotFound = () =>
     return (
         <div>
             <Container>
-                <div className="text-center">
-                    <img src="./images/notfound.png" alt="" />
+                <div className="row">
+                    <div className="col-md-12">
+                        <div className="fees text-center">
+                            <img src="./images/notfound.png" alt="" />
+                        </div>
+                    </div>
                 </div>
             </Container>
         </div>

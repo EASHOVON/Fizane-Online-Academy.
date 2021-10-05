@@ -1,11 +1,14 @@
 import React from 'react';
 import { Container, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import Footer from '../Footer/Footer';
+import Header from '../Header/Header';
 
 const Contact = () =>
 {
     return (
         <div>
+            <Header></Header>
             <div className="title">
                 <h1 className="text-white fw-normal text-center py-4">Contact Us</h1>
             </div>
@@ -49,6 +52,7 @@ const Contact = () =>
                     </div>
                 </div>
             </Container>
+            <Footer></Footer>
         </div>
     );
 };

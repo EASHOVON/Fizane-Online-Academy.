@@ -2,6 +2,8 @@ import React from 'react';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { Container, Button, Row, Col, Card } from 'react-bootstrap';
+import Footer from '../Footer/Footer';
+import Header from '../Header/Header';
 import './Services.css';
 
 const Services = () =>
@@ -15,11 +17,12 @@ const Services = () =>
     }, [])
     return (
         <div>
+            <Header></Header>
             <div className="title">
                 <h1 className="text-white fw-normal text-center py-4">Course Details</h1>
             </div>
             <Container>
-                <div className="row mt-5">
+                <div className="row my-5">
                     {
                         coursesDetailsBro.map(courseDetail => (<div key={courseDetail.id} className="col-md-6">
                             <Row xs={1} md={1} className="g-3">
@@ -32,17 +35,13 @@ const Services = () =>
                                                 {courseDetail.desc}
                                             </Card.Text>
                                             <div>
-                                                <div className="text-center">
-                                                    <h3>For Brothers</h3>
-                                                    <h6>Period: {courseDetail.period}</h6>
-                                                    <h6>Duration: {courseDetail.duration}</h6>
-                                                    <h6>Language: {courseDetail.lang}</h6>
+                                                <div>
+                                                    <h5>For Brothers</h5>
+                                                    <p><b>Period:</b> {courseDetail.period}, <b>Duration:</b> {courseDetail.duration}, <b>Language:</b> {courseDetail.lang}</p>
                                                 </div>
-                                                <div className="text-center">
-                                                    <h3>For Sister</h3>
-                                                    <h6>Period: {courseDetail.period}</h6>
-                                                    <h6>Duration: {courseDetail.duration}</h6>
-                                                    <h6>Language: {courseDetail.lang}</h6>
+                                                <div>
+                                                    <h5>For Sister</h5>
+                                                    <p><b>Period:</b> {courseDetail.period}, <b>Duration:</b> {courseDetail.duration}, <b>Language:</b> {courseDetail.lang}</p>
                                                 </div>
                                             </div>
                                             <div className="text-center">
@@ -54,11 +53,9 @@ const Services = () =>
                             </Row>
                         </div>))
                     }
-                    <div className="text-center my-4">
-                        <Button className="btn">View More</Button>
-                    </div>
                 </div>
             </Container>
+            <Footer></Footer>
         </div>
     );
 };
