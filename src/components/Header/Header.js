@@ -28,7 +28,7 @@ const Header = () =>
                                 Home
                             </NavLink>
                             <NavLink className="link"
-                                to="/services"
+                                to="/courses"
                                 activeStyle={{
                                     backgroundColor: '#54A5DC',
                                     color: 'white'
