@@ -8,6 +8,7 @@ import './Services.css';
 
 const Services = () =>
 {
+    // Fething Data for Course Details
     const [coursesDetailsBro, setCoursesDetailsBro] = useState([]);
     useEffect(() =>
     {
@@ -17,10 +18,14 @@ const Services = () =>
     }, [])
     return (
         <div>
+            {/* Header Start */}
             <Header></Header>
+            {/* Header End */}
             <div className="title">
                 <h1 className="text-white fw-normal text-center py-4">Course Details</h1>
             </div>
+
+            {/* Course Details Card Start */}
             <Container>
                 <div className="row my-5">
                     {
@@ -55,7 +60,11 @@ const Services = () =>
                     }
                 </div>
             </Container>
+            {/* Course Details Card End */}
+
+            {/* Footer */}
             <Footer></Footer>
+            {/* Footer End */}
         </div>
     );
 };
