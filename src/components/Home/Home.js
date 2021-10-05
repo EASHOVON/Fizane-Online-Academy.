@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 
 const Home = () =>
 {
-
+    // Fetching Data courses for Brother
     const [coursesBro, setCoursesBro] = useState([]);
     useEffect(() =>
     {
@@ -17,7 +17,7 @@ const Home = () =>
             .then(res => res.json())
             .then(data => setCoursesBro(data))
     }, []);
-
+    // Fetching Data courses for Sister
     const [coursesSis, setCoursesSis] = useState([]);
     useEffect(() =>
     {
@@ -27,7 +27,11 @@ const Home = () =>
     }, []);
     return (
         <div>
+            {/* Header Component Start */}
             <Header></Header>
+            {/* Header Component End */}
+
+            {/* Slider of Home Page */}
             <Carousel>
                 <Carousel.Item>
                     <img
@@ -51,12 +55,18 @@ const Home = () =>
                     />
                 </Carousel.Item>
             </Carousel>
+
+            {/* Slider of Home Page End */}
+
             <div className="title">
                 <h1 className="text-white fw-normal text-center py-4">Courses</h1>
             </div>
+
+            {/* Courses Section of Home Page */}
             <Container>
                 <div className="row mt-5">
                     <h3 className="text-center">Courses For Brothers</h3>
+                    {/* Courses Card for Brother */}
                     {
                         coursesBro.map(course => <div key={course.id} className="col-md-3">
                             <Card style={{ width: '18rem' }}>
@@ -73,14 +83,19 @@ const Home = () =>
                             </Card>
                         </div>)
                     }
+                    {/* Courses Card for Brother End */}
+
                     <div className="text-center my-4">
                         <Link to="/courses">
                             <Button className="btn">View More</Button>
                         </Link>
                     </div>
                 </div>
+
+
                 <div className="row mt-5">
                     <h3 className="text-center">Courses For Sisters</h3>
+                    {/* Courses Card for Sister */}
                     {
                         coursesSis.map(course => <div key={course.id} className="col-md-3">
                             <Card style={{ width: '18rem' }}>
@@ -97,6 +112,7 @@ const Home = () =>
                             </Card>
                         </div>)
                     }
+                    {/* Courses Card for Sister End */}
                     <div className="text-center my-4">
                         <Link to="/courses">
                             <Button className="btn">View More</Button>
@@ -104,7 +120,11 @@ const Home = () =>
                     </div>
                 </div>
             </Container>
+            {/*  Courses Section of Home Page End */}
+
+            {/* Footer */}
             <Footer></Footer>
+            {/* Footer End */}
         </div>
     );
 };

@@ -12,6 +12,7 @@ function App()
 {
   return (
     <div className="App">
+      {/* Using React Router */}
       <Router>
         <Switch>
           <Route exact path="/">
@@ -36,8 +37,8 @@ function App()
             <NotFound></NotFound>
           </Route>
         </Switch>
-
       </Router>
+      {/* Using React Router */}
     </div>
   );
 }
