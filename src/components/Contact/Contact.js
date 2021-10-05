@@ -8,10 +8,15 @@ const Contact = () =>
 {
     return (
         <div>
+            {/* Header */}
             <Header></Header>
+            {/* Header End */}
+
             <div className="title">
                 <h1 className="text-white fw-normal text-center py-4">Contact Us</h1>
             </div>
+
+            {/* Contact Section Start */}
             <Container className="mb-5 ">
                 <div className="row">
                     <div className="col-md-5">
@@ -27,7 +32,7 @@ const Contact = () =>
                         <p><b>Whatsapp: </b> +92 313 92 92 992</p>
                         <div>
                             <Link to="https://www.facebook.com/OnlineMadrasatulMadina/" title="For Latest Updates">
-                                <img src="https://www.quranteacher.net/web_assets/images/contactus.jpg" />
+                                <img src="https://www.quranteacher.net/web_assets/images/contactus.jpg" alt="" />
                             </Link>
                         </div>
                     </div>
@@ -52,7 +57,11 @@ const Contact = () =>
                     </div>
                 </div>
             </Container>
+            {/* Contact Section End */}
+
+            {/* Footer */}
             <Footer></Footer>
+            {/* Footer End */}
         </div>
     );
 };
