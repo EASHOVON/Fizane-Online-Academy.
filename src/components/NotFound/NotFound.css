@@ -1,0 +1,13 @@
+.custom-area {
+  position: relative;
+}
+
+.not-found img {
+  width: 50%;
+}
+
+.custom-btn {
+  position: absolute;
+  left: 45%;
+  bottom: 5%;
+}
