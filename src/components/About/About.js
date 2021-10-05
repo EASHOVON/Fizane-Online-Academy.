@@ -10,10 +10,14 @@ const About = () =>
 {
     return (
         <div>
+            {/* Header */}
             <Header></Header>
+            {/* Header End */}
+
             <div className="title">
                 <h1 className="text-white fw-normal text-center py-4">Welcome To Quran Teacher</h1>
             </div>
+            {/* About Section Start */}
             <Container className="mb-5 ">
                 <div className="row">
                     <div className="col-md-6">
@@ -27,7 +31,11 @@ const About = () =>
                     </div>
                 </div>
             </Container>
+            {/* About Section End */}
+
+            {/* Footer */}
             <Footer></Footer>
+            {/* Footer End */}
         </div>
     );
 };
